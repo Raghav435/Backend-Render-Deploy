@@ -8,6 +8,10 @@ app.get("/", (req, res) => {
   res.send("Home Page");
 });
 
+app.get("/about", (req, res)=>{
+    res.send("Welcome to about page")
+})
+
 app.listen(PORT, async () => {
   console.log(`Listening on ${PORT}`);
 });
